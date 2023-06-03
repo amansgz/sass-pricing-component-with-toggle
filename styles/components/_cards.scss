@@ -1,0 +1,61 @@
+@use'../abstracts' as *;
+
+.cards {
+    @include large {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+}
+
+.card {
+    width: max(10vw, 330px);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: $grayish_blue;
+    background-color: $white;
+    box-shadow: 0 4px 5px $light_grayish_blue;
+    border-radius: 10px;
+    
+    &__title {
+        font-size: clamp(16px, 3vw, 18px);
+        color: $grayish_blue;
+    } 
+    &__price {
+        font-size: clamp(46px, 5vw, 54px);
+        font-weight: bolder;
+        color: $dark_grayish_blue;  
+        margin: 0.5rem auto;
+    }    
+}
+.card-blue {
+    background-image: linear-gradient(to left top, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+    color: $white;
+
+    @include large {
+        margin-left: -10%;
+        margin-right: -10%;
+        transform: scale(1.1);
+        z-index: 100;
+    }
+    &__title {
+        font-size: clamp(16px, 3vw, 18px);
+    }
+    &__price{
+        margin: 0.5rem auto;
+        font-size: clamp(46px, 5vw, 54px);
+        font-weight: bolder;
+        color: $white;
+    }
+}
+// Classes for script
+.card .monthly {
+    display: none;
+}
+.change-price .card .annually {
+    display: none;
+}
+.change-price .card .monthly {
+    display: block;
+}

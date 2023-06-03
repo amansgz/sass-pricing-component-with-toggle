@@ -1,0 +1,17 @@
+@use'../abstracts' as *;
+
+.list {
+    padding: 0;
+    margin-right: 0;
+    list-style-type: none;
+    font-size: clamp(14px, 2vw, 16px);
+    text-align: center;
+    border-top: 1px solid $light_grayish_blue;
+
+    &__item{
+        padding: 1rem;
+        margin: 0 auto;
+        font-weight: bolder;
+        border-bottom: 1px solid $light_grayish;
+    }
+}

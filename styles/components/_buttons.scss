@@ -1,0 +1,47 @@
+@use'../abstracts' as *;
+
+.btn {
+    width: 90%;
+    padding: 0.8rem 0.5rem;
+    margin: 1rem 0;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: $white;
+    
+    &:focus {
+        outline: none;
+    }
+    
+    &.btn-white {
+        background-color: $white;
+        color: $light_blue;
+        border: 1px solid  $white;
+    
+        @include large {
+            &:hover {
+                background-image: linear-gradient(to left top, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+                border: 1px solid $very_light_grayish_blue;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    &.btn-blue {
+        background-image: linear-gradient(to left top, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+        border: 1px solid $very_light_blue;
+    
+        @include large {
+            &:hover {
+                background-image: none;
+                background-color: $white;
+                border: 1px solid $light_blue;
+                color: $light_blue;
+                cursor: pointer;
+            }
+        }
+    }
+}
