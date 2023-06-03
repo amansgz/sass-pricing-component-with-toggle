@@ -12,7 +12,10 @@ This is a solution for [Pricing Component With Toggle](https://www.frontendmento
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+
+- Control the toggle with both their mouse/trackpad and their keyboard
+
+- Bonus: Complete the challenge with just HTML and CSS
 
 
 ## Built with
@@ -24,7 +27,7 @@ Users should be able to:
 
 ## Live site solution
 
-[Live site]() .
+[Live site](https://sass-pricing-component-with-toggle.netlify.app/) hosted on Netlify.
 
 ## Author
 
