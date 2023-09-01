@@ -1,11 +1,5 @@
-# 👩‍💻 Frontend Mentor - Pricing Component With Toggle
+# 👩‍💻 Pricing Component With Toggle
 
-Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-Join to [Frontend Mentor Discord community](https://discord.gg/UAfh3qzhYb)
-
-This is a solution for [Pricing Component With Toggle](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC) challenge.
-
-![Design preview for the Pricing Component With Toggle challenge](./images/preview.png)
 
 ## The challenge
 
@@ -24,10 +18,19 @@ Users should be able to:
 - SASS
 - Mobile-first workflow
 
-## Live site solution
 
-[Live site](https://sass-pricing-component-with-toggle.netlify.app/) hosted on Netlify.
+<div>
+  <h3>
+    <a href= "https://sass-pricing-component-with-toggle.netlify.app/">
+      Live site
+    </a>
+    <span> | </span>
+    <a href= "https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-## Author
+![Design preview for the Pricing Component With Toggle challenge](./images/preview.png)
 
-- Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
+This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a> 
