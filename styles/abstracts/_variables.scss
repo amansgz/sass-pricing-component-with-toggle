@@ -1,0 +1,27 @@
+/********************
+ COLORS 
+/********************/
+$dark-grayish-blue: hsl(232, 13%, 33%);
+$grayish-blue: hsl(233, 13%, 49%);
+$light-grayish-blue: hsl(234, 14%, 74%);
+$very-light-grayish-blue: hsl(240, 78%, 98%);
+$light-grayish: hsl(234, 14%, 85%);
+$white: hsl(240, 100%, 100%);
+$light-blue: hsl(237, 63%, 64%);
+$very-light-blue: hsl(236, 72%, 79%);
+
+
+/******************* 
+  GRADIENTS 
+/********************/
+$gradient-card: linear-gradient(to left top, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+$gradient-btn: linear-gradient(to left top, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+$gradient-slider: linear-gradient(to right, hsl(238, 75%, 78%), hsl(236, 65%, 60%));
+$gradient-input: linear-gradient(to right, hsl(238, 62%, 92%), hsl(236, 72%, 79%));
+
+
+/******************** 
+  PADDINGS 
+/********************/
+$section-block-padding: clamp(6rem, calc(6rem + ((1vw - 0.32rem) * 1.912)), 8rem);
+$section-inline-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 5.7361)), 8rem);

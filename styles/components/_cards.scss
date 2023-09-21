@@ -1,61 +1,104 @@
 @use'../abstracts' as *;
 
 .cards {
-    @include large {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
-    }
+	@include medium {
+		display: flex;
+		margin-top: 3rem;
+	}
 }
 
 .card {
-    width: max(10vw, 330px);
-    margin-bottom: 2rem;
-    padding: 1rem;
-    text-align: center;
-    color: $grayish_blue;
-    background-color: $white;
-    box-shadow: 0 4px 5px $light_grayish_blue;
-    border-radius: 10px;
-    
-    &__title {
-        font-size: clamp(16px, 3vw, 18px);
-        color: $grayish_blue;
-    } 
-    &__price {
-        font-size: clamp(46px, 5vw, 54px);
-        font-weight: bolder;
-        color: $dark_grayish_blue;  
-        margin: 0.5rem auto;
-    }    
-}
-.card-blue {
-    background-image: linear-gradient(to left top, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
-    color: $white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;	
+	width: 30rem;
+	height: 430px;
+	margin-bottom: 3rem;
+	padding: 2rem 1rem;
+	text-align: center;
+	color: $grayish-blue;
+	background-color: $white;
+	box-shadow: 0 4px 5px $light-grayish-blue;
+	border-radius: 10px;
 
-    @include large {
-        margin-left: -10%;
-        margin-right: -10%;
-        transform: scale(1.1);
-        z-index: 100;
-    }
-    &__title {
-        font-size: clamp(16px, 3vw, 18px);
-    }
-    &__price{
-        margin: 0.5rem auto;
-        font-size: clamp(46px, 5vw, 54px);
-        font-weight: bolder;
-        color: $white;
-    }
+	@include medium {
+		width: 20rem;
+		height: 320px;
+		padding: 3rem 1.6rem;
+	}	
+	@include large {
+		width: clamp(28rem, calc(28rem + ((1vw - 0.32rem) * 1.912)), 30rem);
+		height: 400px;
+	}
+
+	&--blue {	
+		background-image: $gradient-card;
+		color: $white;
+	
+		@include medium {
+			width: 24rem;
+			height: 350px;
+			transform: translateY(-3%);
+		}
+		@include large {
+			width:  clamp(28rem, calc(28rem + ((1vw - 0.32rem) * 5.7361)), 34rem);
+			height: 410px;
+			padding: 5rem 2rem 5rem;
+			transform: translateY(-5%);
+		}	
+	}
+
+	&__title {
+		font-size: $font-size-card-title;
+		color: $grayish-blue;
+
+		&--white {
+			color: $white;
+		}
+	} 
+	&__price {
+		font-size: $font-size-card-price;
+		font-weight: $font-bold;
+		color: $dark-grayish-blue;
+		position: relative;
+	
+		&--white {
+			color: $white;
+		}
+
+		&:before {
+			content: '$';
+			font-size: 3.5rem;
+			position: absolute;
+			top: 8px;
+			left: -25px;
+
+			@include medium {
+				font-size: 2.5rem;
+			}
+			@include large {
+				font-size: 3.5rem;
+			}	
+		}
+
+		@include medium {
+			margin: 1rem 0;
+			font-size: 3.5rem;
+		}
+		@include large {
+			font-size: clamp(3.5rem, calc(3.5rem + ((1vw - 0.32rem) * 2.3901)), 6rem);
+		}
+	}
 }
+
 // Classes for script
 .card .monthly {
-    display: none;
+	display: none;
 }
 .change-price .card .annually {
-    display: none;
+	display: none;
 }
 .change-price .card .monthly {
-    display: block;
+	display: block;
 }

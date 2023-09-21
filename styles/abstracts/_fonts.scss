@@ -1,3 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* FONT FAMILY */
 $main-font: "Montserrat";
+
+/* FONT SIZES */
+$font-size-h1: clamp(2.5rem, calc(2.5rem + ((1vw - 0.32rem) * 0.478)), 3rem);
+
+$font-size-text: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 0.1912)), 1.4rem);
+
+$font-size-card-title: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.1912)), 1.8rem);
+
+$font-size-card-price: 5rem;
+
+$font-size-list-item: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.1912)), 1.6rem);
+
+/* FONT WEIGHT */
 $font-bold: 700;
